@@ -11,6 +11,7 @@ public class WheelTest : MonoBehaviour
 
     WheelCollider WheelCollider;
     public float torque = 200;
+    public float breakForce = 200;
     public float MaxTurnAngle = 30;
     public GameObject wheel;
 
@@ -32,27 +33,21 @@ public class WheelTest : MonoBehaviour
 
     void HandleInput()
     {
-        if(Input.GetAxis("Forward") != 0)
-        {
-            Move(Input.GetAxis("Forward"));
-        }
-
-        if (Input.GetAxis("Turn") != 0)
-        {
-            Turn(Input.GetAxis("Turn"));
-        }
+        WheelCollider.brakeTorque = Input.GetAxis("Break") != 0.0f ? breakForce : 0.0f;
+        if(Input.GetAxis("Break") == 0)  Move(Input.GetAxis("Forward"));
+        Turn(Input.GetAxis("Turn"));
     }
 
     void Move(float mov)
     {
-        float thurstTorque = mov * torque;
-        if (tireType == TireType.Back){        
+        if (tireType == TireType.Back && mov != 0){
+            float thurstTorque = mov * torque;
             WheelCollider.motorTorque = thurstTorque;
         }   
     }
     void Turn(float turnValue)
     {
-        if (tireType == TireType.Front)
+        if (tireType == TireType.Front && turnValue != 0)
         {
             float turn = turnValue * MaxTurnAngle;
             WheelCollider.steerAngle = turn;
