@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Car
   - CreationCheckPoint
+  - Street
   layers:
   - Default
   - TransparentFX
