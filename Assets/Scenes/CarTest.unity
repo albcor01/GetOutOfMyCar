@@ -132,7 +132,6 @@ GameObject:
   - component: {fileID: 49664150}
   - component: {fileID: 49664153}
   - component: {fileID: 49664152}
-  - component: {fileID: 49664151}
   m_Layer: 0
   m_Name: rueda_br
   m_TagString: Untagged
@@ -149,28 +148,11 @@ Transform:
   m_GameObject: {fileID: 49664149}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.301, y: -0.703, z: 3.544}
-  m_LocalScale: {x: -0.32, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 871451324}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &49664151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 49664149}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d92d81a3b7117d241aaae6eece294cf8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tireType: 1
-  torque: 10000
-  breakForce: 20000
-  MaxTurnAngle: 50
-  wheel: {fileID: 5088007825973621465}
 --- !u!146 &49664152
 WheelCollider:
   m_ObjectHideFlags: 0
@@ -182,11 +164,11 @@ WheelCollider:
   m_Radius: 0.4
   m_SuspensionSpring:
     spring: 90000
-    damper: 8000
+    damper: 5000
     targetPosition: 0.7
   m_SuspensionDistance: 0.21
   m_ForceAppPointDistance: 0
-  m_Mass: 30
+  m_Mass: 33
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
     m_ExtremumSlip: 0.4
@@ -220,7 +202,6 @@ GameObject:
   - component: {fileID: 235099280}
   - component: {fileID: 235099283}
   - component: {fileID: 235099282}
-  - component: {fileID: 235099281}
   m_Layer: 0
   m_Name: rueda_fl
   m_TagString: Untagged
@@ -237,28 +218,11 @@ Transform:
   m_GameObject: {fileID: 235099279}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.151, y: -0.712, z: 6.86}
-  m_LocalScale: {x: -0.32, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 871451324}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &235099281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 235099279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d92d81a3b7117d241aaae6eece294cf8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tireType: 0
-  torque: 10000
-  breakForce: 20000
-  MaxTurnAngle: 50
-  wheel: {fileID: 5088007825973621471}
 --- !u!146 &235099282
 WheelCollider:
   m_ObjectHideFlags: 0
@@ -270,11 +234,11 @@ WheelCollider:
   m_Radius: 0.4
   m_SuspensionSpring:
     spring: 90000
-    damper: 8000
+    damper: 5000
     targetPosition: 0.7
   m_SuspensionDistance: 0.21
   m_ForceAppPointDistance: 0
-  m_Mass: 30
+  m_Mass: 33
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
     m_ExtremumSlip: 0.4
@@ -1106,7 +1070,6 @@ GameObject:
   - component: {fileID: 1939996578}
   - component: {fileID: 1939996581}
   - component: {fileID: 1939996580}
-  - component: {fileID: 1939996579}
   m_Layer: 0
   m_Name: rueda_bl
   m_TagString: Untagged
@@ -1123,28 +1086,11 @@ Transform:
   m_GameObject: {fileID: 1939996577}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.1680002, y: -0.709, z: 3.539}
-  m_LocalScale: {x: -0.32, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 871451324}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1939996579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1939996577}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d92d81a3b7117d241aaae6eece294cf8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tireType: 1
-  torque: 10000
-  breakForce: 20000
-  MaxTurnAngle: 50
-  wheel: {fileID: 5088007825973621467}
 --- !u!146 &1939996580
 WheelCollider:
   m_ObjectHideFlags: 0
@@ -1156,11 +1102,11 @@ WheelCollider:
   m_Radius: 0.4
   m_SuspensionSpring:
     spring: 90000
-    damper: 8000
+    damper: 5000
     targetPosition: 0.7
   m_SuspensionDistance: 0.21
   m_ForceAppPointDistance: 0
-  m_Mass: 30
+  m_Mass: 33
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
     m_ExtremumSlip: 0.4
@@ -1194,7 +1140,6 @@ GameObject:
   - component: {fileID: 2005261625}
   - component: {fileID: 2005261628}
   - component: {fileID: 2005261627}
-  - component: {fileID: 2005261626}
   m_Layer: 0
   m_Name: rueda_fr
   m_TagString: Untagged
@@ -1211,28 +1156,11 @@ Transform:
   m_GameObject: {fileID: 2005261624}
   m_LocalRotation: {x: -0.0024970388, y: -0.0012880138, z: -0.0067814565, w: 0.99997306}
   m_LocalPosition: {x: 4.283, y: -0.712, z: 6.856}
-  m_LocalScale: {x: -0.32, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 871451324}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -0.287, y: -0.14600001, z: -0.777}
---- !u!114 &2005261626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2005261624}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d92d81a3b7117d241aaae6eece294cf8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tireType: 0
-  torque: 10000
-  breakForce: 20000
-  MaxTurnAngle: 50
-  wheel: {fileID: 5088007825973621469}
 --- !u!146 &2005261627
 WheelCollider:
   m_ObjectHideFlags: 0
@@ -1244,11 +1172,11 @@ WheelCollider:
   m_Radius: 0.4
   m_SuspensionSpring:
     spring: 90000
-    damper: 8000
+    damper: 5000
     targetPosition: 0.7
   m_SuspensionDistance: 0.21
   m_ForceAppPointDistance: 0
-  m_Mass: 30
+  m_Mass: 33
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
     m_ExtremumSlip: 0.4
@@ -1493,8 +1421,9 @@ GameObject:
   - component: {fileID: 5088007825975815183}
   - component: {fileID: 5088007825973621456}
   - component: {fileID: 5088007825973621457}
+  - component: {fileID: 5088007825973621458}
   m_Layer: 0
-  m_Name: SM_Veh_Car_Van_01
+  m_Name: Van
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1508,8 +1437,8 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5088007825973621455}
   serializedVersion: 2
-  m_Mass: 3500
-  m_Drag: 0
+  m_Mass: 3000
+  m_Drag: 0.05
   m_AngularDrag: 0.1
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -1530,6 +1459,35 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 97982d8a36ff16f4a88f291ef2443e49, type: 3}
+--- !u!114 &5088007825973621458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5088007825973621455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24439a92b6354bd4093b5f4a9b761b70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxAcceleration: 220
+  turnSensitivity: 1
+  maxSteerAngle: 45
+  _centerOfMass: {x: 0, y: -0.3, z: 0}
+  wheels:
+  - model: {fileID: 5088007825973621469}
+    collider: {fileID: 2005261627}
+    axel: 0
+  - model: {fileID: 5088007825973621471}
+    collider: {fileID: 235099282}
+    axel: 0
+  - model: {fileID: 5088007825973621467}
+    collider: {fileID: 1939996580}
+    axel: 1
+  - model: {fileID: 5088007825973621465}
+    collider: {fileID: 49664152}
+    axel: 1
 --- !u!1 &5088007825973621465
 GameObject:
   m_ObjectHideFlags: 0
